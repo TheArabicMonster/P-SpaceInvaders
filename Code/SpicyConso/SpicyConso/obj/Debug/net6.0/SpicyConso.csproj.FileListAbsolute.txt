@@ -1,0 +1,88 @@
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.AssemblyReference.cache
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfoInputs.cache
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfo.cs
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CoreCompileInputs.cache
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.exe
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.deps.json
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.runtimeconfig.json
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.dll
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.pdb
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.dll
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.dll
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.dll
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.pdb
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.pdb
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.pdb
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CopyComplete
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.dll
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\refint\SpicyConso.dll
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.pdb
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.genruntimeconfig.cache
+C:\Users\px05iql\Downloads\SpicyConso\SpicyConso\obj\Debug\net6.0\ref\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.AssemblyReference.cache
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.GeneratedMSBuildEditorConfig.editorconfig
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfoInputs.cache
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfo.cs
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CoreCompileInputs.cache
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\refint\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.pdb
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.exe
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.deps.json
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.runtimeconfig.json
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.pdb
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.dll
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.dll
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.dll
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.pdb
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.pdb
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.pdb
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CopyComplete
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.genruntimeconfig.cache
+D:\ETML\PROJETS\P-spicy invader\SpicyConso\SpicyConso\obj\Debug\net6.0\ref\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.exe
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.deps.json
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.runtimeconfig.json
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.dll
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.dll
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.dll
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.AssemblyReference.cache
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.GeneratedMSBuildEditorConfig.editorconfig
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfoInputs.cache
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfo.cs
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CoreCompileInputs.cache
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CopyComplete
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\refint\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.genruntimeconfig.cache
+D:\ETML\PROJETS\P-spicy invader\c#\SpicyConso\SpicyConso\obj\Debug\net6.0\ref\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.AssemblyReference.cache
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.GeneratedMSBuildEditorConfig.editorconfig
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfoInputs.cache
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfo.cs
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CoreCompileInputs.cache
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\refint\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.exe
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.deps.json
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.runtimeconfig.json
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.dll
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.dll
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.dll
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.dll
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.pdb
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CopyComplete
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.genruntimeconfig.cache
+D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\ref\SpicyConso.dll
