@@ -10,10 +10,12 @@ namespace Model
     {
         public int MissileX;
         public int MissileY;
+        public int MissileDMG;
         public bool MissileLancer = true;
         public bool MissileToucher = false;
         public Missile()
         {
+            this.MissileDMG = MissileDMG;
             this.MissileX = MissileX;
             this.MissileY = MissileY;
             this.MissileLancer = MissileLancer;

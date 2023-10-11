@@ -9,7 +9,7 @@ namespace Display
 
         public static string[] AlienSprit =
         {
-            @" /-~-\",
+            @" /-~-\ ",
             @"|- # -|",
             @" \―v―/ ",
         };
@@ -34,6 +34,10 @@ namespace Display
 
         public static void DessinerAlien(Alien alien)
         {
+
+            if (alien.AlienHP == 15) { Console.ForegroundColor = ConsoleColor.Green; }
+            if (alien.AlienHP == 10) { Console.ForegroundColor = ConsoleColor.DarkYellow; }
+            if(alien.AlienHP == 5) { Console.ForegroundColor = ConsoleColor.Red; }
             // modifer le boom par un ascii art d'explosion
             if (!alien.AlienEstMort)
             {
@@ -44,6 +48,7 @@ namespace Display
                     Console.WriteLine(AlienSprit[i]);
                 }
             }
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public static void DessinerAlienMort(Alien alien)
         {
