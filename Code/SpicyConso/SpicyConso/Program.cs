@@ -29,172 +29,175 @@ bool CollisionMissileJoueurDansAlien(MissileJoueur missile, Alien alien)
     }
     return false;
 }
-
-
-
-if(ChoixMenu == 0)
+do
 {
-    menu.DessinerMenuTitre();
-    menu.DessinerMenuJouer();
-    menu.DessinerMenuOption();
-    menu.DessinerMenuScore();
-    do //boucle pour gerer le choix du menu du joueur
+    if (ChoixMenu == 0)
     {
-        ConsoleKeyInfo keyPressed = Console.ReadKey();
-        switch (keyPressed.Key)
+        menu.DessinerMenuTitre();
+        menu.DessinerMenuJouer();
+        menu.DessinerMenuOption();
+        menu.DessinerMenuScore();
+        do //boucle pour gerer le choix du menu du joueur
         {
-            case ConsoleKey.UpArrow:
-                if (ChoixMenu > 1)
-                {
-                    ChoixMenu--;
-                }
-                break;
-            case ConsoleKey.DownArrow:
-                if (ChoixMenu < 3)
-                {
-                    ChoixMenu++;
-                }
-                break;
-            case ConsoleKey.Enter:
-                ChoixJeux = false;//pour sortir de la boucle do while
-                break;
-        }
-        Console.ForegroundColor = ConsoleColor.White; //afficher la couleur d'affiche de base
-        if (ChoixMenu == 1)
-        {
-            Console.Clear();
-            menu.DessinerMenuTitre();
-
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            menu.DessinerMenuJouer();
-            Console.ForegroundColor = ConsoleColor.White;
-
-            menu.DessinerMenuOption();
-            menu.DessinerMenuScore();
-        }
-        else if (ChoixMenu == 2)
-        {
-            Console.Clear();
-            menu.DessinerMenuTitre();
-            menu.DessinerMenuJouer();
-
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            menu.DessinerMenuOption();
-            Console.ForegroundColor = ConsoleColor.White;
-
-            menu.DessinerMenuScore();
-        }
-        else if (ChoixMenu == 3)
-        {
-            Console.Clear();
-            menu.DessinerMenuTitre();
-            menu.DessinerMenuJouer();
-            menu.DessinerMenuOption();
-
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            menu.DessinerMenuScore();
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-    } while (ChoixJeux);
-}
-
-if (ChoixMenu == 1) // Boucle pour afficher le jeu lui-même
-{
-    ConsoleKeyInfo keyPressed;
-    while (GameOver || GameWin)
-    {
-        Console.Clear();
-
-        foreach (MissileJoueur missile in ListeMissilesJoueur)
-        {
-            Playground.DessinerMissileDeclancher(missile);
-        }
-        foreach (Alien alien in ListeAlien)
-        {
-            //Dessine tout les aliens dans la liste ListeAlien
-            Playground.DessinerAlien(alien);
-        }
-        Playground.DessinerJoueur(joueur);
-
-        if (Console.KeyAvailable)
-        {
-            keyPressed = Console.ReadKey(true);
+            ConsoleKeyInfo keyPressed = Console.ReadKey();
             switch (keyPressed.Key)
             {
-                case ConsoleKey.RightArrow:
-                    joueur.DeplacementJoueurDroite();
+                case ConsoleKey.UpArrow:
+                    if (ChoixMenu > 1)
+                    {
+                        ChoixMenu--;
+                    }
                     break;
-                case ConsoleKey.LeftArrow:
-                    joueur.DeplacementJoueurGauche();
+                case ConsoleKey.DownArrow:
+                    if (ChoixMenu < 3)
+                    {
+                        ChoixMenu++;
+                    }
                     break;
-                case ConsoleKey.Spacebar:
-                    MissileJoueur nouveauMissile = new MissileJoueur(joueur);
-                    ListeMissilesJoueur.Add(nouveauMissile);
-                    break;
-                case ConsoleKey.Escape:
-                    Environment.Exit(0);
+                case ConsoleKey.Enter:
+                    ChoixJeux = false;//pour sortir de la boucle do while
                     break;
             }
-        }
-
-        foreach (MissileJoueur missile in ListeMissilesJoueur)
-        {
-            missile.ActualiserMissile();
-
-            foreach(Alien alien in ListeAlien)
+            Console.ForegroundColor = ConsoleColor.White; //afficher la couleur d'affiche de base
+            if (ChoixMenu == 1)
             {
-                if (CollisionMissileJoueurDansAlien(missile, alien))
-                {
-                    if (MissilesASupprimer.Contains(missile))
-                    {
-                        missile.MissileDMG = 0;
-                    }
-                    alien.AlienHP -= missile.MissileDMG;
-                    if(alien.AlienHP <= 0)
-                    {
-                        alien.AlienEstMort = true;
-                    }
-                    MissilesASupprimer.Add(missile);
-                }
+                Console.Clear();
+                menu.DessinerMenuTitre();
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                menu.DessinerMenuJouer();
+                Console.ForegroundColor = ConsoleColor.White;
+
+                menu.DessinerMenuOption();
+                menu.DessinerMenuScore();
             }
-        }
-        ListeAlien.RemoveAll(alien => alien.AlienHP <= 0); //chatgpt m'a aider avec ca
-        foreach (MissileJoueur missile in MissilesASupprimer)
-        {
-            ListeMissilesJoueur.Remove(missile);
-        }
-        foreach(Alien alien in ListeAlien)
-        {
-            alien.DeplacementDroiteAlien();
-            alien.DeplacementGaucheAlien();
-        }
-        if (ListeAlien.Count == 0)
-        {
-            GameOver = false;
-        }
-        Thread.Sleep(10);
+            else if (ChoixMenu == 2)
+            {
+                Console.Clear();
+                menu.DessinerMenuTitre();
+                menu.DessinerMenuJouer();
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                menu.DessinerMenuOption();
+                Console.ForegroundColor = ConsoleColor.White;
+
+                menu.DessinerMenuScore();
+            }
+            else if (ChoixMenu == 3)
+            {
+                Console.Clear();
+                menu.DessinerMenuTitre();
+                menu.DessinerMenuJouer();
+                menu.DessinerMenuOption();
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                menu.DessinerMenuScore();
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+        } while (ChoixJeux);
     }
 
-}
+    if (ChoixMenu == 1) // Boucle pour afficher le jeu lui-même
+    {
+        ConsoleKeyInfo keyPressed;
+        while (GameOver || GameWin)
+        {
+            Console.Clear();
 
-if (ChoixMenu == 2)//afficher les options du jeux
-{
+            foreach (MissileJoueur missile in ListeMissilesJoueur)
+            {
+                Playground.DessinerMissileDeclancher(missile);
+            }
+            foreach (Alien alien in ListeAlien)
+            {
+                //Dessine tout les aliens dans la liste ListeAlien
+                Playground.DessinerAlien(alien);
+            }
+            Playground.DessinerJoueur(joueur);
 
-}while (!ChoixJeux);
+            if (Console.KeyAvailable)
+            {
+                keyPressed = Console.ReadKey(true);
+                switch (keyPressed.Key)
+                {
+                    case ConsoleKey.RightArrow:
+                        joueur.DeplacementJoueurDroite();
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        joueur.DeplacementJoueurGauche();
+                        break;
+                    case ConsoleKey.Spacebar:
+                        MissileJoueur nouveauMissile = new MissileJoueur(joueur);
+                        ListeMissilesJoueur.Add(nouveauMissile);
+                        break;
+                    case ConsoleKey.Escape:
+                        Environment.Exit(0);
+                        break;
+                }
+            }
 
-if (ChoixMenu == 3)//afficher le menu score
-{
+            foreach (MissileJoueur missile in ListeMissilesJoueur)
+            {
+                missile.ActualiserMissile();
 
-}while(!ChoixJeux);
+                foreach (Alien alien in ListeAlien)
+                {
+                    if (CollisionMissileJoueurDansAlien(missile, alien))
+                    {
+                        if (MissilesASupprimer.Contains(missile))
+                        {
+                            missile.MissileDMG = 0;
+                        }
+                        alien.AlienHP -= missile.MissileDMG;
+                        if (alien.AlienHP <= 0)
+                        {
+                            alien.AlienEstMort = true;
+                        }
+                        MissilesASupprimer.Add(missile);
+                    }
+                }
+            }
+            ListeAlien.RemoveAll(alien => alien.AlienHP <= 0); //chatgpt m'a aider avec ca
+            foreach (MissileJoueur missile in MissilesASupprimer)
+            {
+                ListeMissilesJoueur.Remove(missile);
+            }
+            foreach (Alien alien in ListeAlien)
+            {
+                alien.DeplacementDroiteAlien();
+                alien.DeplacementGaucheAlien();
+            }
+            if (ListeAlien.Count == 0)
+            {
+                GameOver = false;
+            }
+            Thread.Sleep(10);
 
-if (!GameWin)
-{
+            if (!GameOver || !GameWin)
+            {
+                break;
+            }
+        }
+    }
+    if (GameWin)
+    {
+        menu.DessinerGameWin();
+    }
+    if (GameOver)
+    {
+        menu.DessinerGameOver();
+    }
 
-}
-if (!GameOver)
-{
+    if (ChoixMenu == 2)//afficher les options du jeux
+    {
 
-}
+    } while (!ChoixJeux) ;
+    if (ChoixMenu == 3)//afficher le menu score
+    {
+
+    } while (!ChoixJeux) ;
+} while (true);
+
 /*uint frameNumber=0; // count the number of frames displayed
 
 Alien alain = new Alien(0,0);

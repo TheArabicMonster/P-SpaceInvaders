@@ -99,5 +99,23 @@ namespace Display
                 Console.WriteLine(MenuScore[o]);
             }
         }
+        public void DessinerGameWin()
+        {
+            Console.Clear();
+            for(int i = 0; i < GameWin.Length; i++)
+            {
+                Console.SetCursorPosition(Playground.SCREEN_WIDTH / 2 - 22, Playground.SCREEN_HEIGHT / 2 + i);
+                Console.WriteLine(GameWin[i]);
+            }
+        }
+        public void DessinerGameOver()
+        {
+            Console.Clear();
+            for (int i = 0; i < GameOver.Length; i++)
+            {
+                Console.SetCursorPosition(Playground.SCREEN_WIDTH / 2 - 25, Playground.SCREEN_HEIGHT / 2 + i);
+                Console.WriteLine(GameOver[i]);
+            }
+        }
     }
 }
