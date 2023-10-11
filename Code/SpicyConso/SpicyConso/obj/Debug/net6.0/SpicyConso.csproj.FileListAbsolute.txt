@@ -86,3 +86,25 @@ D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\bin\Debug\
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CopyComplete
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.genruntimeconfig.cache
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\SpicyConso\obj\Debug\net6.0\ref\SpicyConso.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.exe
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.deps.json
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.runtimeconfig.json
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\SpicyConso.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\Display.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\Model.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\bin\Debug\net6.0\Storage.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.AssemblyReference.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfoInputs.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.AssemblyInfo.cs
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CoreCompileInputs.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.csproj.CopyComplete
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\refint\SpicyConso.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\SpicyConso.genruntimeconfig.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\SpicyConso\obj\Debug\net6.0\ref\SpicyConso.dll

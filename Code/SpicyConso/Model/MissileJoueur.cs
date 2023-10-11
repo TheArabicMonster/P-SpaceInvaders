@@ -14,5 +14,13 @@ namespace Model
             this.MissileY = joueur.JoueurY;
             this.MissileLancer = MissileLancer;
         }
+        public void ActualiserMissile()
+        {
+            this.MissileY -= 1;
+            if(this.MissileY < 0)
+            {
+                this.MissileLancer = false;
+            }
+        }
     }
 }

@@ -86,7 +86,7 @@ namespace Display
                     return;
                 }
                 Console.SetCursorPosition(missile.MissileX, missile.MissileY);
-                Console.Write(MissileJoueurSprit0);
+                Console.Write(MissileJoueurSprit2);
             }
         }
         public static void DessinerMissileAlien(MissileAlien missileAlien)

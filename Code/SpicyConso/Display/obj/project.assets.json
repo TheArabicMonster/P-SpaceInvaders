@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
+      "projectUniqueName": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
       "projectName": "Display",
-      "projectPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
+      "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
       "packagesPath": "C:\\Users\\pq40rdc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\obj\\",
+      "outputPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,8 +57,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
+            "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
             }
           }
         }

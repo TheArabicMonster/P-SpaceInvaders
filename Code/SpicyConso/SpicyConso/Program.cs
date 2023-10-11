@@ -89,15 +89,19 @@ if (ChoixMenu == 1) // Boucle pour afficher le jeu lui-même
 
         Console.Clear();
 
+        foreach (MissileJoueur missile in ListeMissiles)
+        {
+            Playground.DessinerMissileDeclancher(missile);
+        }
+
         // Affichez les éléments du jeu ici, y compris les aliens
         foreach (Alien alien in ListeAlien)
         {
-            alien.DeplacementDroiteAlien();
             Playground.DessinerAlien(alien);
             // Affichez chaque alien à sa position actuelle (alien.X, alien.Y)
         }
+        Playground.DessinerJoueur(joueur);
 
-        // Gérez l'entrée utilisateur ici (déplacement du joueur, tir, etc.)
         if (Console.KeyAvailable)
         {
             keyPressed = Console.ReadKey(true);
@@ -110,13 +114,22 @@ if (ChoixMenu == 1) // Boucle pour afficher le jeu lui-même
                     joueur.DeplacementJoueurGauche();
                     break;
                 case ConsoleKey.Spacebar:
-
+                    MissileJoueur nouveauMissile = new MissileJoueur(joueur);
+                    ListeMissiles.Add(nouveauMissile);
                     break;
             }
         }
+        foreach (MissileJoueur missile in ListeMissiles)
+        {
+            missile.ActualiserMissile();
+        }
+        foreach (Alien alien in ListeAlien)
+        {
+            alien.DeplacementDroiteAlien();
+            alien.DeplacementGaucheAlien();
+        }
 
-        Playground.DessinerJoueur(joueur);
-        Thread.Sleep(100);
+        Thread.Sleep(10);
     }
 }
 

@@ -58,3 +58,18 @@ D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Storage\obj\Debug\net
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Storage\obj\Debug\net6.0\refint\Storage.dll
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Storage\obj\Debug\net6.0\Storage.pdb
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Storage\obj\Debug\net6.0\ref\Storage.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Debug\net6.0\Storage.deps.json
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Debug\net6.0\Storage.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Debug\net6.0\Storage.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Debug\net6.0\Model.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Debug\net6.0\Model.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.csproj.AssemblyReference.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.AssemblyInfoInputs.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.AssemblyInfo.cs
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.csproj.CoreCompileInputs.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.csproj.CopyComplete
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\refint\Storage.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\Storage.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Debug\net6.0\ref\Storage.dll

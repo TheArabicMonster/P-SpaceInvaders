@@ -58,3 +58,18 @@ D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Display\obj\Debug\net
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Display\obj\Debug\net6.0\refint\Display.dll
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Display\obj\Debug\net6.0\Display.pdb
 D:\ETML\PROJETS\P-spicy invader\c#\spicyconsov2\SpicyConso\Display\obj\Debug\net6.0\ref\Display.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Debug\net6.0\Display.deps.json
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Debug\net6.0\Display.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Debug\net6.0\Display.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Debug\net6.0\Model.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Debug\net6.0\Model.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.csproj.AssemblyReference.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.AssemblyInfoInputs.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.AssemblyInfo.cs
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.csproj.CoreCompileInputs.cache
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.csproj.CopyComplete
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\refint\Display.dll
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\Display.pdb
+C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Debug\net6.0\ref\Display.dll

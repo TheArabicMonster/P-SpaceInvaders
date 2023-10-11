@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj": {}
+    "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+    "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\pq40rdc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\obj\\",
+        "outputPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj": {
+    "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
+        "projectUniqueName": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
         "projectName": "Storage",
-        "projectPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
+        "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
         "packagesPath": "C:\\Users\\pq40rdc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\obj\\",
+        "outputPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\pq40rdc\\source\\repos\\TheArabicMonster\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
+              "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
               }
             }
           }

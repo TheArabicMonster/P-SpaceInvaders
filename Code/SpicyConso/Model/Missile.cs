@@ -10,7 +10,7 @@ namespace Model
     {
         public int MissileX;
         public int MissileY;
-        public bool MissileLancer = false;
+        public bool MissileLancer = true;
         public bool MissileToucher = false;
         public Missile()
         {
