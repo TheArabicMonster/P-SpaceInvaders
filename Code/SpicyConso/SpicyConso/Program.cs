@@ -1,7 +1,5 @@
-﻿using Model;
-using Display;
-using System.Numerics;
-using Storage;
+﻿using Display;
+using Model;
 
 bool ChoixJeux = true;
 int ChoixMenu = 0;
@@ -14,6 +12,7 @@ List<MissileAlien> ListeMissileAlien = new();
 List<Alien> ListeAlien = new();
 Menu menu = new();
 List<MissileJoueur> MissilesASupprimer = new List<MissileJoueur>();
+Random random = new Random();
 Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);
 
 for (int i = 0; i < 10; i++)
@@ -108,6 +107,10 @@ do
             {
                 Playground.DessinerMissileDeclancher(missile);
             }
+            foreach(MissileAlien missileAlien in ListeMissileAlien)
+            {
+                Playground.DessinerMissileAlien(missileAlien);
+            }
             foreach (Alien alien in ListeAlien)
             {
                 //Dessine tout les aliens dans la liste ListeAlien
@@ -158,14 +161,26 @@ do
                 }
             }
             ListeAlien.RemoveAll(alien => alien.AlienHP <= 0); //chatgpt m'a aider avec ca
+
             foreach (MissileJoueur missile in MissilesASupprimer)
             {
                 ListeMissilesJoueur.Remove(missile);
+            }
+            foreach(MissileAlien missileAlien in ListeMissileAlien)
+            {
+                missileAlien.MissileActualise();
             }
             foreach (Alien alien in ListeAlien)
             {
                 alien.DeplacementDroiteAlien();
                 alien.DeplacementGaucheAlien();
+
+                int RandomNb = random.Next(1, 50);
+                if(RandomNb == 1)
+                {
+                    MissileAlien nouveauMissilleAlien = new MissileAlien(alien);
+                    ListeMissileAlien.Add(nouveauMissilleAlien);
+                }
             }
             if (ListeAlien.Count == 0)
             {
@@ -196,6 +211,7 @@ do
     {
 
     } while (!ChoixJeux) ;
+
 } while (true);
 
 /*uint frameNumber=0; // count the number of frames displayed
