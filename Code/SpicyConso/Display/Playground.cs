@@ -102,7 +102,7 @@ namespace Display
                 {
                     return;
                 }
-                Console.SetCursorPosition(missileAlien.MissileX + 3, missileAlien.MissileY);
+                Console.SetCursorPosition(missileAlien.MissileX + 3, missileAlien.MissileY + 3);
                 Console.Write("█");
             }
         }
