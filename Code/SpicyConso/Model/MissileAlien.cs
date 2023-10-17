@@ -13,14 +13,23 @@ namespace Model
             this.MissileY = alien.AlienY;
             this.MissileX = alien.AlienX;
             this.MissileLancer = MissileLancer;
+            this.MissileDMG = 5;
         }
-        public void MissileActualise()
+        public void MissileActualiseAlien(MissileAlien missileAlien)
         {
-            MissileY += 1;
-            if (MissileY == Console.WindowHeight)
+            this.MissileY += 1;
+            if (this.MissileY == 40)//40 = console screen height
             {
-                MissileLancer = false;
+                this.MissileLancer = false;
             }
+        }
+        public static bool CollisionMissileJoueurDansAlien(MissileJoueur missile, Alien alien)
+        {
+            if (missile.MissileX + 1 >= alien.AlienX && missile.MissileX <= alien.AlienX + 6 && missile.MissileY <= alien.AlienY + 2)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -3,15 +3,16 @@ using Model;
 
 bool ChoixJeux = true;
 int ChoixMenu = 0;
-bool GameOver = true;
-bool GameWin = true;
+bool GameOver = false;
+bool GameWin = false;
 
 Playground.Initalisation();
 List<MissileJoueur> ListeMissilesJoueur = new();
 List<MissileAlien> ListeMissileAlien = new();
 List<Alien> ListeAlien = new();
 Menu menu = new();
-List<MissileJoueur> MissilesASupprimer = new List<MissileJoueur>();
+List<MissileJoueur> MissilesASupprimer = new();
+List<MissileAlien> MissileAlienASupprimer = new();
 Random random = new Random();
 Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);
 
@@ -20,14 +21,6 @@ for (int i = 0; i < 10; i++)
     ListeAlien.Add(new Alien(10 + i * 10, 3, 15));
 }
 
-bool CollisionMissileJoueurDansAlien(MissileJoueur missile, Alien alien)
-{
-    if (missile.MissileX + 1 >= alien.AlienX && missile.MissileX <= alien.AlienX + 6 && missile.MissileY <= alien.AlienY + 2)
-    {
-        return true;
-    }
-    return false;
-}
 do
 {
     if (ChoixMenu == 0)
@@ -99,7 +92,7 @@ do
     if (ChoixMenu == 1) // Boucle pour afficher le jeu lui-même
     {
         ConsoleKeyInfo keyPressed;
-        while (GameOver || GameWin)
+        while (!GameOver || !GameWin)
         {
             Console.Clear();
 
@@ -145,7 +138,7 @@ do
 
                 foreach (Alien alien in ListeAlien)
                 {
-                    if (CollisionMissileJoueurDansAlien(missile, alien))
+                    if (MissileAlien.CollisionMissileJoueurDansAlien(missile, alien))
                     {
                         if (MissilesASupprimer.Contains(missile))
                         {
@@ -161,15 +154,25 @@ do
                 }
             }
             ListeAlien.RemoveAll(alien => alien.AlienHP <= 0); //chatgpt m'a aider avec ca
-
             foreach (MissileJoueur missile in MissilesASupprimer)
             {
                 ListeMissilesJoueur.Remove(missile);
             }
+
             foreach(MissileAlien missileAlien in ListeMissileAlien)
             {
-                missileAlien.MissileActualise();
+                missileAlien.MissileActualiseAlien(missileAlien);
+                if (joueur.CollisionMissileAlien(missileAlien))
+                {
+                    joueur.PrendreDegats(missileAlien.MissileDMG);
+                    MissileAlienASupprimer.Add(missileAlien);
+                }
             }
+            foreach(MissileAlien missile in MissileAlienASupprimer)//supprimer les missiles qui ont toucher le joueur
+            {
+                ListeMissileAlien.Remove(missile);
+            }
+
             foreach (Alien alien in ListeAlien)
             {
                 alien.DeplacementDroiteAlien();
@@ -184,11 +187,15 @@ do
             }
             if (ListeAlien.Count == 0)
             {
-                GameOver = false;
+                GameWin = true;
             }
-            Thread.Sleep(10);
+            if (joueur.JoueurEstMort)
+            {
+                GameOver = true;
+            }
+            Thread.Sleep(100);
 
-            if (!GameOver || !GameWin)
+            if (GameOver || GameWin)
             {
                 break;
             }

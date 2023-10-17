@@ -7,6 +7,7 @@ namespace Display
         public const int SCREEN_HEIGHT = 40;
         public const int SCREEN_WIDTH = 150;
 
+
         public static string[] AlienSprit =
         {
             @" /-~-\ ",
@@ -102,7 +103,7 @@ namespace Display
                 {
                     return;
                 }
-                Console.SetCursorPosition(missileAlien.MissileX + 3, missileAlien.MissileY + 3);
+                Console.SetCursorPosition(missileAlien.MissileX, missileAlien.MissileY);
                 Console.Write("█");
             }
         }
