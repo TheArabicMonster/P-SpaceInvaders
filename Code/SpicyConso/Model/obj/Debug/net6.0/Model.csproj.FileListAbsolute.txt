@@ -57,3 +57,15 @@ C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debu
 C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\refint\Model.dll
 C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.pdb
 C:\Users\pq40rdc\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\ref\Model.dll
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\bin\Debug\net6.0\Model.deps.json
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\bin\Debug\net6.0\Model.dll
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\bin\Debug\net6.0\Model.pdb
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.dll
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\refint\Model.dll
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\Model.pdb
+C:\Users\chats\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Model\obj\Debug\net6.0\ref\Model.dll
