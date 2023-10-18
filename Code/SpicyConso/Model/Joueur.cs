@@ -24,18 +24,18 @@ namespace Model
         }
         public void DeplacementJoueurDroite()
         {
-            JoueurX += 1;
-            if (JoueurX == Console.WindowWidth - 3)
+            if (JoueurX == Console.WindowWidth - 7){    }
+            else
             {
-                JoueurX = 0;
+                JoueurX += 1;
             }
         }
         public void DeplacementJoueurGauche()
         {
-            JoueurX -= 1;
-            if (JoueurX == 3)
+            if (JoueurX == 1){  }
+            else
             {
-                JoueurX = 0;
+                JoueurX -= 1;
             }
         }
         public void ChargementMissileJoueur(MissileJoueur missileJoueur)
