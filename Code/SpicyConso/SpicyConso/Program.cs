@@ -2,13 +2,13 @@
 using Model;
 
 int ChoixMenu = 0;
+int CptAlien = 0;
 bool ChoixJeux = true;
 bool GameOver = false;
 bool GameWin = false;
 bool Recommencer = true;
-bool ToucheValide = true;
-bool MsgErreur = false;
 ConsoleKeyInfo keyPressed;
+ConsoleKeyInfo response;
 
 Playground.Initalisation();
 List<MissileAlien> MissileAlienASupprimer = new();
@@ -24,17 +24,15 @@ Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);
 
 do
 {
-    for (int i = 0; i < 10; i++)
+    for (CptAlien = 0; CptAlien < 10; CptAlien++)
     {
-        ListeAlien.Add(new Alien(10 + i * 10, 3, 15));
+        ListeAlien.Add(new Alien(10 + CptAlien * 10, 3, 15));
     }
-    Recommencer = true;
-    MsgErreur = false;
 
     if (ChoixMenu == 0)
     {
         Console.Clear();
-        menu.DessinerMenuTitre();
+         menu.DessinerMenuTitre();
         menu.DessinerMenuJouer();
         menu.DessinerMenuOption();
         menu.DessinerMenuScore();
@@ -94,14 +92,16 @@ do
                     ListeMissilesJoueur.Add(nouveauMissile);
                     break;
                 case ConsoleKey.Enter:
-                    ChoixJeux = false;
+                    if (ChoixMenu >= 1 && ChoixMenu <= 3)
+                    {
+                        ChoixJeux = false;
+                    }
                     break;
                 case ConsoleKey.Escape:
                     Environment.Exit(0);
                     break;
                 default:
                     Console.SetCursorPosition(0, 0);
-                    MsgErreur = true;
                     Console.WriteLine("Touche non valide. Utilisez les touches fléchées, Espace ou Échap.");
                     break;
 
@@ -234,7 +234,7 @@ do
         }
         do
         {
-            ConsoleKeyInfo response = Console.ReadKey();
+            response = Console.ReadKey();
             if (response.Key == ConsoleKey.Y)
             {
                 ListeMissilesJoueur.Clear();
@@ -249,7 +249,7 @@ do
                 GameWin = false;
                 joueur.JoueurEstMort = false;
                 Recommencer = false;
-                continue;
+                break;
             }
             else if (response.Key == ConsoleKey.N)
             {
