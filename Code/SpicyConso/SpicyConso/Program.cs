@@ -3,6 +3,7 @@ using Model;
 
 int ChoixMenu = 0;
 int CptAlien = 0;
+int ChanceAlienTirer = 0;
 bool ChoixJeux = true;
 bool GameOver = false;
 bool GameWin = false;
@@ -10,26 +11,28 @@ bool Recommencer = true;
 ConsoleKeyInfo keyPressed;
 ConsoleKeyInfo response;
 
-Playground.Initalisation();
-List<MissileAlien> MissileAlienASupprimer = new();
-List<MissileJoueur> ListeMissilesJoueur = new();
-List<MissileJoueur> MissilesASupprimer = new();
-List<MissileAlien> ListeMissileAlien = new();
-List<Alien> ListeAlien = new();
+Playground.Initalisation();//Initialise la fenêtre de la console
+List<MissileAlien> MissileAlienASupprimer = new();//Liste pour stocker les missiles aliens à supprimer
+List<MissileJoueur> ListeMissilesJoueur = new();//Liste pour stocker les missiles du joueur
+List<MissileJoueur> MissilesASupprimer = new();//Liste pour stocker les missiles du joueur à supprimer
+List<MissileAlien> ListeMissileAlien = new();//Liste pour stocker les missiles aliens
+List<Alien> ListeAlien = new();//Liste pour stocker les aliens
 
-Menu menu = new();
+Menu menu = new();//Crée un nouvel objet Menu
 Random random = new Random();
 
 
 do
 {
-    Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);
+    Recommencer= false;
+    Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);//Crée un joueur au centre de la fenêtre
+    //création de 10 aliens
     for (CptAlien = 0; CptAlien < 10; CptAlien++)
     {
         ListeAlien.Add(new Alien(10 + CptAlien * 10, 3, 20));
     }
 
-    if (ChoixMenu == 0)
+    if (ChoixMenu == 0)//si ChoixMenu = 0, affichage du menu prinpiale
     {
         Console.Clear();
         menu.DessinerMenuTitre();
@@ -87,10 +90,6 @@ do
                         ChoixMenu++;
                     }
                     break;
-                case ConsoleKey.Spacebar:
-                    MissileJoueur nouveauMissile = new MissileJoueur(joueur, 5);
-                    ListeMissilesJoueur.Add(nouveauMissile);
-                    break;
                 case ConsoleKey.Enter:
                     if (ChoixMenu >= 1 && ChoixMenu <= 3)
                     {
@@ -136,19 +135,19 @@ do
             if (Console.KeyAvailable)
             {
                 keyPressedGame = Console.ReadKey(true);
-                switch (keyPressedGame.Key)
+                switch (keyPressedGame.Key) //switch pour savoir les interactions du joueur
                 {
-                    case ConsoleKey.RightArrow:
+                    case ConsoleKey.RightArrow: //si flèche de droite, joueur se déplace à droite
                         joueur.DeplacementJoueurDroite();
                         break;
-                    case ConsoleKey.LeftArrow:
+                    case ConsoleKey.LeftArrow: //si flèche de gauche, joueur se déplace à gauche
                         joueur.DeplacementJoueurGauche();
                         break;
-                    case ConsoleKey.Spacebar:
+                    case ConsoleKey.Spacebar: //si barre éspace, tire un missile
                         MissileJoueur nouveauMissile = new MissileJoueur(joueur, 5);
                         ListeMissilesJoueur.Add(nouveauMissile);
                         break;
-                    case ConsoleKey.Escape:
+                    case ConsoleKey.Escape: //si echap, quitte le programme
                         Environment.Exit(0);
                         break;
                 }
@@ -160,64 +159,75 @@ do
 
                 foreach (Alien alien in ListeAlien)
                 {
+                    //si le missile du joueur touche un alien -> entre dans la boucle
                     if (MissileAlien.CollisionMissileJoueurDansAlien(missile, alien))
                     {
-                        if (MissilesASupprimer.Contains(missile))
-                        {
-                            missile.MissileDMG = 0;
-                        }
+                        //soustrais des HP de l'aliens égale au dégats du MissileJoueur
                         alien.AlienHP -= missile.MissileDMG;
+                        //si les HP de l'alien sont = 0, il est considérer comme mort
                         if (alien.AlienHP <= 0)
                         {
                             alien.AlienEstMort = true;
                         }
+                        //ajout du missile qui a toucher l'alien dans la liste des missiles qui vont se faire supprimer
                         MissilesASupprimer.Add(missile);
                     }
                 }
             }
+            //Supprime tout les aliens qui ont des hp égale à 0
             ListeAlien.RemoveAll(alien => alien.AlienHP <= 0); //chatgpt m'a aider avec ca
+
             foreach (MissileJoueur missile in MissilesASupprimer)
             {
+                //supprimer les missiles qui ont déjà toucher un alien
                 ListeMissilesJoueur.Remove(missile);
             }
 
             foreach (MissileAlien missileAlien in ListeMissileAlien)
             {
                 missileAlien.MissileActualiseAlien(missileAlien);
+                //si le missile de l'alien touche le joueur il entre dans la boucle
                 if (joueur.CollisionMissileAlien(missileAlien))
                 {
+                    //le missile de l'alien qui infliger des DMG au joueur
                     joueur.PrendreDegats(missileAlien.MissileDMG);
+                    //ajout du missile alien à la liste des missiles aliens à supprimer
                     MissileAlienASupprimer.Add(missileAlien);
                 }
             }
-
-            foreach (MissileAlien missile in MissileAlienASupprimer)//supprimer les missiles qui ont toucher le joueur
+            //supprimer les missiles qui ont toucher le joueur
+            foreach (MissileAlien missile in MissileAlienASupprimer)
             {
                 ListeMissileAlien.Remove(missile);
             }
 
             foreach (Alien alien in ListeAlien)
             {
+                //bouge les aliens de droite à gauche dans la console
                 alien.DeplacementDroiteAlien();
                 alien.DeplacementGaucheAlien();
 
-                int RandomNb = random.Next(1, 50);
-                if (RandomNb == 1)
+                ChanceAlienTirer = random.Next(1, 51); //génère un nombre entre 1 et 50
+                //si le nombre crée est 1, l'alien tire
+                if (ChanceAlienTirer == 1)
                 {
                     MissileAlien nouveauMissilleAlien = new MissileAlien(alien);
                     ListeMissileAlien.Add(nouveauMissilleAlien);
                 }
             }
-
+            //si la joueur a tuer tout les aliens, le jeux deviens gaganer
             if (ListeAlien.Count == 0)
             {
                 GameWin = true;
             }
+            //si le joueur s'est fait toucher par trop de missiles enemis, le jeux deviens perdu
             if (joueur.JoueurEstMort)
             {
                 GameOver = true;
             }
-            Thread.Sleep(10);
+
+            Thread.Sleep(10); //timing
+            //si le jeux est gagner ou perdu, il entre dans la boucle
             if (GameOver || GameWin)
             {
                 if (GameWin)
@@ -229,12 +239,15 @@ do
                     menu.DessinerGameOver();
                 }
                 Console.SetCursorPosition(0, 0);
+                //Demande au joueur si il veux recommencer une partie ou quitter le programme
                 Console.WriteLine("Voulez-vous rejouer ? (Appuyez sur 'y' pour Oui, ou 'N' pour Non)");
             }
         }
+
         do
         {
             response = Console.ReadKey();
+            //si le joueur à appuyer sur "Y" il réinitialise les variable et clear les listes pour recommencer une partie
             if (response.Key == ConsoleKey.Y)
             {
                 ListeMissilesJoueur.Clear();
@@ -250,6 +263,7 @@ do
                 Recommencer = false;
                 break;
             }
+            //sinon, si il a appuyer sur "N" il quitte le programme
             else if (response.Key == ConsoleKey.N)
             {
                 Environment.Exit(0);
@@ -267,43 +281,3 @@ do
     } while (!ChoixJeux) ;
 
 } while (true);
-
-/*uint frameNumber=0; // count the number of frames displayed
-
-Alien alain = new Alien(0,0);
-
-Playground.Initalisation();
-
-while (true)
-{
-    // Actions de l'utilisateur
-    if (Console.KeyAvailable) // L'utilisateur a pressé une touche
-    {
-        ConsoleKeyInfo keyPressed = Console.ReadKey(false);
-        switch (keyPressed.Key)
-        {
-            case ConsoleKey.Escape:
-                Environment.Exit(0);
-                break;
-            default:
-                break;
-        }
-    }
-
-    // Déplacement au niveau du modèle (état)
-    alain.Move();
-
-    // Affichage
-    Playground.Clear();
-    Playground.DrawAlien(alain);
-    frameNumber++;
-
-    // Autosave
-    if (frameNumber % 1000 == 0 )
-    {
-        Store.StoreAlien(alain);
-    }
-
-    // Timing
-    Thread.Sleep(100);
-}*/

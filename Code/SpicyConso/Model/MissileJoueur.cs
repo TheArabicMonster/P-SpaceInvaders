@@ -15,11 +15,12 @@ namespace Model
         public MissileJoueur(Joueur joueur, int MissileDMG)
         {
             this.MissileX = joueur.JoueurX + 3; //ajouter 3 au X du missile pour qu'il se lance au millieu du joueur
-            this.MissileLancer = MissileLancer;
-            this.MissileDMG = 5;
             this.MissileY = joueur.JoueurY + 2; //ajouter 2 pour que le missile ne se lance pas dans le joueur
             this.MissileDMG = MissileDMG;
         }
+        /// <summary>
+        /// augemante de 1 le Y du missile joueur si il est lancer
+        /// </summary>
         public void ActualiserMissile()
         {
             if (this.MissileY == 1)

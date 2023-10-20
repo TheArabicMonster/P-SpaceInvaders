@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Model
+﻿namespace Model
 {
     public class Joueur
     {
@@ -33,22 +27,16 @@ namespace Model
         /// </summary>
         public void DeplacementJoueurDroite()
         {
-            if (JoueurX == Console.WindowWidth - largeurJoueur) {    }
-            else
-            {
-                JoueurX += 4;
-            }
+            JoueurX += 4;
+            if(JoueurX > Console.WindowWidth) { JoueurX = Console.WindowWidth - largeurJoueur; }
         }
         /// <summary>
         /// baisse de 4 le X du joueur, si il n'est pas coller au bord de la console
         /// </summary>
         public void DeplacementJoueurGauche()
         {
-            if (JoueurX == 1){  }
-            else
-            {
-                JoueurX -= 4;
-            }
+            JoueurX -= 4;
+            if (JoueurX < 0) { JoueurX = 0; }
         }
         /// <summary>
         /// Ajoute un missile à la liste des missiles du joueur
