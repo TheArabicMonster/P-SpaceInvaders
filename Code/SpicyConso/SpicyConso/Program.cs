@@ -19,20 +19,20 @@ List<Alien> ListeAlien = new();
 
 Menu menu = new();
 Random random = new Random();
-Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);
 
 
 do
 {
+    Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);
     for (CptAlien = 0; CptAlien < 10; CptAlien++)
     {
-        ListeAlien.Add(new Alien(10 + CptAlien * 10, 3, 15));
+        ListeAlien.Add(new Alien(10 + CptAlien * 10, 3, 20));
     }
 
     if (ChoixMenu == 0)
     {
         Console.Clear();
-         menu.DessinerMenuTitre();
+        menu.DessinerMenuTitre();
         menu.DessinerMenuJouer();
         menu.DessinerMenuOption();
         menu.DessinerMenuScore();
@@ -88,7 +88,7 @@ do
                     }
                     break;
                 case ConsoleKey.Spacebar:
-                    MissileJoueur nouveauMissile = new MissileJoueur(joueur);
+                    MissileJoueur nouveauMissile = new MissileJoueur(joueur, 5);
                     ListeMissilesJoueur.Add(nouveauMissile);
                     break;
                 case ConsoleKey.Enter:
@@ -145,7 +145,7 @@ do
                         joueur.DeplacementJoueurGauche();
                         break;
                     case ConsoleKey.Spacebar:
-                        MissileJoueur nouveauMissile = new MissileJoueur(joueur);
+                        MissileJoueur nouveauMissile = new MissileJoueur(joueur, 5);
                         ListeMissilesJoueur.Add(nouveauMissile);
                         break;
                     case ConsoleKey.Escape:
@@ -242,7 +242,6 @@ do
                 ListeAlien.Clear();
                 MissileAlienASupprimer.Clear();
                 MissilesASupprimer.Clear();
-                joueur = new Joueur(Console.WindowWidth / 2, Console.WindowHeight - 10);
                 ChoixMenu = 0;
                 ChoixJeux = true;
                 GameOver = false;//set des 2 bool "game" en true pour ne pas re entrer dans la boucle du jeux en lui même

@@ -13,12 +13,12 @@ namespace Model
         public int MissileDMG;
         public bool MissileLancer = true;
         public bool MissileToucher = false;
+        /// <summary>
+        /// Constructeur de la classe Missile
+        /// </summary>
         public Missile()
         {
             this.MissileDMG = MissileDMG;
-            this.MissileX = MissileX;
-            this.MissileY = MissileY;
-            this.MissileLancer = MissileLancer;
         }
     }
 }

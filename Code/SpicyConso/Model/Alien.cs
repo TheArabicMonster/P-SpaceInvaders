@@ -14,6 +14,12 @@ namespace Model
         public int AlienHP;
         public bool AlienEstMort = false;
         public bool AlienDirection = true;
+        /// <summary>
+        /// constructeur de la classe Alien
+        /// </summary>
+        /// <param name="AlienX">Position X de l'alien sur l'écran</param>
+        /// <param name="AlienY">Position Y de l'alien sur l'écran</param>
+        /// <param name="AlienHP">Points de vie de l'alien</param>
         public Alien(int AlienX, int AlienY, int AlienHP)
         {
             this.AlienX = AlienX;
@@ -21,6 +27,9 @@ namespace Model
             this.AlienHP = AlienHP;
             this.AlienEstMort = false;
         }
+        /// <summary>
+        /// modifie le X de l'alien
+        /// </summary>
         public void DeplacementDroiteAlien()
         {
             if (this.AlienDirection)
