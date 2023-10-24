@@ -24,7 +24,7 @@ Random random = new Random();
 
 do
 {
-    Recommencer= false;
+    Recommencer = true;
     Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);//Crée un joueur au centre de la fenêtre
     //création de 10 aliens
     for (CptAlien = 0; CptAlien < 10; CptAlien++)
