@@ -83,11 +83,18 @@ namespace Display
         /// <param name="joueur"></param>
         public static void DessinerJoueur(Joueur joueur)
         {
+            if (joueur.JoueurHP == 15) { Console.ForegroundColor = ConsoleColor.Green; }
+            if (joueur.JoueurHP == 10) { Console.ForegroundColor = ConsoleColor.DarkYellow; }
+            if (joueur.JoueurHP == 5) { Console.ForegroundColor = ConsoleColor.Red; }
+
             for (int j = 0; j < JoueurSprit.Length; j++)
             {
                 Console.SetCursorPosition(joueur.JoueurX, joueur.JoueurY + j);
                 Console.WriteLine(JoueurSprit[j]);
             }
+
+            //réinitialise la couleur de console
+            Console.ForegroundColor = ConsoleColor.White;
         }
         /// <summary>
         /// dessine le missile du joueur en fonction de son X et de son Y

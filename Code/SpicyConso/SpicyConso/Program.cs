@@ -269,7 +269,7 @@ do
                 {
                     menu.DessinerGameOver();
                 }
-                Console.SetCursorPosition(0, 1);
+                Console.SetCursorPosition(0, 0);
                 Console.WriteLine("Appuyez sur echap pour passer ou entrer votre pseudo pour save votre score : ");
 
                 while (true)
@@ -290,7 +290,7 @@ do
                             }
                             else
                             {
-                                Console.SetCursorPosition(0, 2);
+                                Console.SetCursorPosition(0, 1);
                                 Console.WriteLine("Le pseudo ne doit pas être null");
                             }
                         }
@@ -300,9 +300,9 @@ do
                             if (jouPseudo.Length > 0)
                             {
                                 jouPseudo = jouPseudo.Substring(0, jouPseudo.Length - 1);
-                                Console.SetCursorPosition(0, Console.CursorTop);
+                                Console.SetCursorPosition(76, 0);
                                 Console.Write(new string(' ', Console.WindowWidth - 1));
-                                Console.SetCursorPosition(0, Console.CursorTop);
+                                Console.SetCursorPosition(76, 0);
                                 Console.Write(jouPseudo);
                             }
                         }
@@ -310,8 +310,8 @@ do
                         {
                             //Ajouter le caractère saisi au pseudo
                             jouPseudo += key.KeyChar;
-                            Console.SetCursorPosition(20, 0);
-                            Console.Write(key.KeyChar);
+                            Console.SetCursorPosition(76, 0);
+                            Console.Write(jouPseudo);
                         }
                     }
                     if (quitter) break;
