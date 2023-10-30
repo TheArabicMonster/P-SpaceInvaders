@@ -286,7 +286,7 @@ do
                             if (!string.IsNullOrEmpty(jouPseudo))
                             {
                                 Store.SauvgarderScore(scoreJoueur, jouPseudo);
-                                quitter = false;
+                                quitter = true;
                             }
                             else
                             {
@@ -352,11 +352,18 @@ do
 
     if (ChoixMenu == 2)//afficher les options du jeux
     {
+        {
 
-    } while (!ChoixJeux) ;
+        } while (!ChoixJeux) ;
+    } 
+
     if (ChoixMenu == 3)//afficher le menu score
     {
+        Console.Clear();
+        menu.DessinerMenuTitre();
         Store.Afficher5TopJoueurs();
+
+        Console.SetCursorPosition(0, 0);
         Console.WriteLine("Appuyer sur échap pour revenir au menu principale");
         while (true)//si utilisateur appuie sur echap, 
         {
@@ -370,6 +377,6 @@ do
                 }
             }
         }
-    } while (!ChoixJeux) ;
+    }
 
 } while (true);

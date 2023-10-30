@@ -7,11 +7,11 @@ namespace Storage
     public class Store
     {
         //String pour se connecter au serveur 
-        public static string dbConnexion = "Server=localhost;Port=8888;Database=db_space_invaders;User=root;Password=root;";
+        public static string dbConnexion = "Server=localhost;Port=6033;Database=db_space_invaders;User=root;Password=root;";
         //Commande MySQL pour savoir les top 5 meilleurs joueurs
         public static string commandeSQLTopJoueur = "SELECT * FROM t_joueur ORDER BY jouNombrePoints DESC LIMIT 5;";
         //Commande MySQL pour ajouter le score et le pseudo du joueur dans la base de données
-        public static string commandeSQLInsertScoreJoueur = "INSERT INTO t_joueur (jouNom, jouNombrePoints) VALUES (@jouPseudo, @scoreJoueur)";
+        public static string commandeSQLInsertScoreJoueur = "INSERT INTO t_joueur (jouPseudo, jouNombrePoints) VALUES (@joueurPseudo, @joueurScore)";
         public static void StoreAlien(Alien alain)
         {
             Debug.WriteLine("C'est dans la db que je mets " + alain.ToString());
@@ -27,15 +27,18 @@ namespace Storage
 
                 using (MySqlCommand cmd = new MySqlCommand(commandeSQLTopJoueur, connexion))
                 {
-
                     using (MySqlDataReader select = cmd.ExecuteReader())
                     {
-                        while (select.Read())//Boucle pour afficher les meilleures joueurs 
+                        Console.WriteLine("Top 5 des meilleurs joueurs :");
+                        while (select.Read()) //Boucle pour afficher les meilleurs joueurs.
                         {
-                            int id = select.GetInt32("jouID");
-                            string nom = select.GetString("jouNom");
-                            int score = select.GetInt32("jouNombrePoints");
-                            Console.WriteLine($"ID: {id}, Nom: {nom}, Points: {score}");
+                            for(int cpt = 1; cpt < select.FieldCount; cpt++)
+                            {
+                                Console.SetCursorPosition(150 / 2 - 17, 12 + cpt);
+                                string nom = select.GetString("jouNom");
+                                int score = select.GetInt32("jouNombrePoints");
+                                Console.WriteLine($"{cpt}. Nom: {nom}, Points: {score}");
+                            }
                         }
                     }
                 }
@@ -54,13 +57,14 @@ namespace Storage
 
                 using (MySqlCommand cmd = new MySqlCommand(commandeSQLInsertScoreJoueur, connexion))
                 {
-                    cmd.Parameters.AddWithValue("@pseudo", jouPseudo);
-                    cmd.Parameters.AddWithValue("@score", scoreJoueur);
+                    cmd.Parameters.AddWithValue("@joueurPseudo", jouPseudo);
+                    cmd.Parameters.AddWithValue("@joueurScore", scoreJoueur);
                     cmd.ExecuteNonQuery();
 
-                    Console.SetCursorPosition(5, 0);
+                    Console.SetCursorPosition(0, 1);
                     Console.WriteLine($"{jouPseudo} à sauvergder un score de : {scoreJoueur}.");
                 }
+                connexion.Close();
             }
         }
     }
