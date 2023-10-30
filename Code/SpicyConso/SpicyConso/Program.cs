@@ -34,7 +34,7 @@ do
     jouPseudo = "";
     scoreJoueur = 0;
     Recommencer = true;
-    Joueur joueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);//Crée un joueur au centre de la fenêtre
+    Joueur leJoueur = new(Console.WindowWidth / 2, Console.WindowHeight - 10);//Crée un joueur au centre de la fenêtre
     //création de 10 aliens
     for (CptAlien = 0; CptAlien < 10; CptAlien++)
     {
@@ -122,7 +122,10 @@ do
         ConsoleKeyInfo keyPressedGame;
         while (!GameOver && !GameWin)
         {
-
+            Console.SetCursorPosition(0, Console.WindowHeight - 1);
+            Console.Write("Score: " + scoreJoueur);
+            Console.SetCursorPosition(Console.WindowWidth - 10, Console.WindowHeight - 1);
+            Console.Write("Vie: " + leJoueur.JoueurHP);
             if (frameNumber % 4 == 0)
             {
                 Console.Clear();
@@ -132,7 +135,7 @@ do
                     //Dessine tout les aliens dans la liste ListeAlien
                     Playground.DessinerAlien(alien);
                 }
-                Playground.DessinerJoueur(joueur);
+                Playground.DessinerJoueur(leJoueur);
                 foreach (MissileAlien missileAlien in ListeMissileAlien)
                 {
                     //dessine tout les missiles aliens contenu dans ListeMissileAlien
@@ -152,13 +155,13 @@ do
                 switch (keyPressedGame.Key) //switch pour savoir les interactions du joueur
                 {
                     case ConsoleKey.RightArrow: //si flèche de droite, joueur se déplace à droite
-                        joueur.DeplacementJoueurDroite();
+                        leJoueur.DeplacementJoueurDroite();
                         break;
                     case ConsoleKey.LeftArrow: //si flèche de gauche, joueur se déplace à gauche
-                        joueur.DeplacementJoueurGauche();
+                        leJoueur.DeplacementJoueurGauche();
                         break;
                     case ConsoleKey.Spacebar: //si barre éspace, tire un missile
-                        MissileJoueur nouveauMissile = new MissileJoueur(joueur, 5);
+                        MissileJoueur nouveauMissile = new MissileJoueur(leJoueur, 5);
                         ListeMissilesJoueur.Add(nouveauMissile);
                         break;
                     case ConsoleKey.Escape: //si echap, quitte le programme
@@ -207,10 +210,10 @@ do
                 {
                     missileAlien.MissileActualiseAlien(missileAlien);
                     //si le missile de l'alien touche le joueur il entre dans la boucle
-                    if (joueur.CollisionMissileAlien(missileAlien))
+                    if (leJoueur.CollisionMissileAlien(missileAlien))
                     {
                         //le missile de l'alien qui infliger des DMG au joueur
-                        joueur.PrendreDegats(missileAlien.MissileDMG);
+                        leJoueur.PrendreDegats(missileAlien.MissileDMG);
                         //ajout du missile alien à la liste des missiles aliens à supprimer
                         MissileAlienASupprimer.Add(missileAlien);
                     }
@@ -221,7 +224,7 @@ do
             {
                 ListeMissileAlien.Remove(missile);
             }
-            if (frameNumber % 2 == 0)
+            if (frameNumber % 4 == 0)
             {
                 foreach (Alien alien in ListeAlien)
                 {
@@ -252,7 +255,7 @@ do
                 GameWin = true;
             }
             //si le joueur s'est fait toucher par trop de missiles enemis, le jeux deviens perdu
-            if (joueur.JoueurEstMort)
+            if (leJoueur.JoueurEstMort)
             {
                 GameOver = true;
             }
@@ -261,6 +264,19 @@ do
             //si le jeux est gagner ou perdu, il entre dans la boucle
             if (GameOver || GameWin)
             {
+                for(int i = 0; i < Console.WindowHeight; i += 2)
+                {
+                    Console.SetCursorPosition(0, i);
+                    Console.Write("                                                                                                                                                      ");
+                    Thread.Sleep(7);
+                }
+                for (int i = 1; i < Console.WindowHeight; i += 2)
+                {
+                    Console.SetCursorPosition(0, i);
+                    Console.Write("                                                                                                                                                       ");
+                    Thread.Sleep(7);
+                }
+
                 if (GameWin)
                 {
                     menu.DessinerGameWin();
@@ -271,6 +287,7 @@ do
                 }
                 Console.SetCursorPosition(0, 0);
                 Console.WriteLine("Appuyez sur echap pour passer ou entrer votre pseudo pour save votre score : ");
+                Thread.Sleep(10);
 
                 while (true)
                 {
@@ -320,7 +337,7 @@ do
         }
         do
         {
-            Console.SetCursorPosition(0, 3);
+            Console.SetCursorPosition(0, 2);
             //Demande au joueur si il veux recommencer une partie ou quitter le programme
             Console.WriteLine("Voulez-vous rejouer ? (Appuyez sur 'y' pour Oui, ou 'N' pour Non)");
             response = Console.ReadKey();
@@ -336,7 +353,7 @@ do
                 ChoixJeux = true;
                 GameOver = false;//set des 2 bool "game" en true pour ne pas re entrer dans la boucle du jeux en lui même
                 GameWin = false;
-                joueur.JoueurEstMort = false;
+                leJoueur.JoueurEstMort = false;
                 Recommencer = false;
                 quitter = false;
                 jouPseudo = string.Empty;
@@ -355,7 +372,7 @@ do
         {
 
         } while (!ChoixJeux) ;
-    } 
+    }
 
     if (ChoixMenu == 3)//afficher le menu score
     {
@@ -378,5 +395,5 @@ do
             }
         }
     }
-
+    ChoixMenu = 0;
 } while (true);

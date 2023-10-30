@@ -15,7 +15,7 @@ namespace Model
         public MissileJoueur(Joueur joueur, int MissileDMG)
         {
             this.MissileX = joueur.JoueurX + 3; //ajouter 3 au X du missile pour qu'il se lance au millieu du joueur
-            this.MissileY = joueur.JoueurY + 2; //ajouter 2 pour que le missile ne se lance pas dans le joueur
+            this.MissileY = joueur.JoueurY; //ajouter 2 pour que le missile ne se lance pas dans le joueur
             this.MissileDMG = MissileDMG;
         }
         /// <summary>

@@ -43,11 +43,14 @@ namespace Model
         /// <returns>True si une collision est détectée, sinon False</returns>
         public static bool CollisionMissileJoueurDansAlien(MissileJoueur missile, Alien alien)
         {
-            if (missile.MissileX + 1 >= alien.AlienX && missile.MissileX <= alien.AlienX + 6 && missile.MissileY <= alien.AlienY + 2)
+            if (missile.MissileX >= alien.AlienX && missile.MissileX <= alien.AlienX + 7 && missile.MissileY >= alien.AlienY && missile.MissileY <= alien.AlienY + 2)
             {
                 return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
         }
     }
 }

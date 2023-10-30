@@ -28,7 +28,7 @@
         public void DeplacementJoueurDroite()
         {
             JoueurX += 4;
-            if(JoueurX > Console.WindowWidth) { JoueurX = Console.WindowWidth - largeurJoueur; }
+            if(JoueurX + 7 > Console.WindowWidth) { JoueurX = Console.WindowWidth - largeurJoueur; }
         }
         /// <summary>
         /// baisse de 4 le X du joueur, si il n'est pas coller au bord de la console

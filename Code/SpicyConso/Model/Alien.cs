@@ -34,7 +34,7 @@ namespace Model
         {
             if (this.AlienDirection)
             {
-                AlienX += 1;
+                AlienX += 2;
                 if (AlienX == Console.WindowWidth - 6)
                 {
                     this.AlienDirection = false;
@@ -46,7 +46,7 @@ namespace Model
         {
             if (!this.AlienDirection)
             {
-                this.AlienX -= 1;
+                this.AlienX -= 2;
                 if (this.AlienX <= 2)
                 {
                     this.AlienDirection = true;

@@ -12,6 +12,7 @@ namespace Storage
         public static string commandeSQLTopJoueur = "SELECT * FROM t_joueur ORDER BY jouNombrePoints DESC LIMIT 5;";
         //Commande MySQL pour ajouter le score et le pseudo du joueur dans la base de données
         public static string commandeSQLInsertScoreJoueur = "INSERT INTO t_joueur (jouPseudo, jouNombrePoints) VALUES (@joueurPseudo, @joueurScore)";
+        public static int cpt = 1;
         public static void StoreAlien(Alien alain)
         {
             Debug.WriteLine("C'est dans la db que je mets " + alain.ToString());
@@ -29,19 +30,20 @@ namespace Storage
                 {
                     using (MySqlDataReader select = cmd.ExecuteReader())
                     {
+                        Console.SetCursorPosition(63, 11);
                         Console.WriteLine("Top 5 des meilleurs joueurs :");
                         while (select.Read()) //Boucle pour afficher les meilleurs joueurs.
                         {
-                            for(int cpt = 1; cpt < select.FieldCount; cpt++)
-                            {
-                                Console.SetCursorPosition(150 / 2 - 17, 12 + cpt);
-                                string nom = select.GetString("jouNom");
-                                int score = select.GetInt32("jouNombrePoints");
-                                Console.WriteLine($"{cpt}. Nom: {nom}, Points: {score}");
-                            }
+                            Console.SetCursorPosition(63, 12 + cpt);
+                            string nom = select.GetString("jouPseudo");
+                            int score = select.GetInt32("jouNombrePoints");
+                            Console.WriteLine($"{cpt}. Nom: {nom}, Points: {score}");
+                            cpt++;
                         }
+                        cpt = 1;
                     }
                 }
+                connexion.Close();
             }
         }
         /// <summary>
