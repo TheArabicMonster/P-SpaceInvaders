@@ -1842,25 +1842,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pq40rdc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\chats\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
+      "projectUniqueName": "C:\\Users\\chats\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
       "projectName": "Storage",
-      "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
-      "packagesPath": "C:\\Users\\pq40rdc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\obj\\",
+      "projectPath": "C:\\Users\\chats\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
+      "packagesPath": "C:\\Users\\chats\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chats\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pq40rdc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chats\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1869,15 +1867,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
+            "C:\\Users\\chats\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\chats\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
             }
           }
         }
