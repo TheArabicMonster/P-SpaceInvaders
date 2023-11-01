@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {}
+    "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+    "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\pq40rdc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pq40rdc\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\obj\\",
+        "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\matkhaiy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pq40rdc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\matkhaiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,8 +48,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

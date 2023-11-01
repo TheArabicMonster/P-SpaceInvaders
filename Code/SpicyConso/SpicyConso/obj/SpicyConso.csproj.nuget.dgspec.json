@@ -1,0 +1,270 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\SpicyConso\\SpicyConso.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
+        "projectName": "Display",
+        "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
+        "packagesPath": "C:\\Users\\matkhaiy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matkhaiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\matkhaiy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matkhaiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\SpicyConso\\SpicyConso.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\SpicyConso\\SpicyConso.csproj",
+        "projectName": "SpicyConso",
+        "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\SpicyConso\\SpicyConso.csproj",
+        "packagesPath": "C:\\Users\\matkhaiy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\SpicyConso\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matkhaiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj": {
+                "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj"
+              },
+              "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
+              },
+              "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj": {
+                "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
+        "projectName": "Storage",
+        "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\Storage.csproj",
+        "packagesPath": "C:\\Users\\matkhaiy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Storage\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matkhaiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
