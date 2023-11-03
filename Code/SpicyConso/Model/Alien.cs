@@ -14,6 +14,7 @@ namespace Model
         public int AlienHP;
         public bool AlienEstMort = false;
         public bool AlienDirection = true;
+        public const int SCREEN_WIDTH = 150;
         /// <summary>
         /// constructeur de la classe Alien
         /// </summary>
@@ -35,7 +36,7 @@ namespace Model
             if (this.AlienDirection)
             {
                 AlienX += 2;
-                if (AlienX == Console.WindowWidth - 6)
+                if (AlienX == SCREEN_WIDTH - 6)
                 {
                     this.AlienDirection = false;
                     this.AlienY += 5;

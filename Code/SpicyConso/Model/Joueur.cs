@@ -9,6 +9,8 @@
         public bool JoueurEstMort;
         int largeurJoueur = 7;
         int hauteurJoueur = 2;
+        public const int SCREEN_WIDTH = 150;
+        public const int SCREEN_HEIGHT = 40;
         /// <summary>
         /// Constructeur de la classe Joueur
         /// </summary>
@@ -28,7 +30,7 @@
         public void DeplacementJoueurDroite()
         {
             JoueurX += 4;
-            if(JoueurX + 7 > Console.WindowWidth) { JoueurX = Console.WindowWidth - largeurJoueur; }
+            if(JoueurX + 7 > SCREEN_WIDTH) { JoueurX = SCREEN_WIDTH - largeurJoueur; }
         }
         /// <summary>
         /// baisse de 4 le X du joueur, si il n'est pas coller au bord de la console
