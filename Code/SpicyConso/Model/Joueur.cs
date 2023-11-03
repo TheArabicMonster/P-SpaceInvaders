@@ -1,5 +1,8 @@
 ﻿namespace Model
 {
+    /// <summary>
+    /// la classe Joueur contient les caractéristiques basique du joueur, ainsi que ses méthodes pour se déplacer, chargemer des missiles, prendre des dégats, vérifier si un missiles aliens la toucher
+    /// </summary>
     public class Joueur
     {
         List<MissileJoueur> ListeMissileJoueur = new List<MissileJoueur>();

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// la classe Missile contient les caractéristiques de base du missile pour les hériters au autres missiles
+    /// </summary>
     public class Missile
     {
         public int MissileX;

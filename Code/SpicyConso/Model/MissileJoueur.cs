@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Model
+﻿namespace Model
 {
+    /// <summary>
+    /// la classe MissileJoueur contient les caractéristiques basique du missiles joueur, ainsi que sa méthode de déplacement, et sa méthode pour savoir si le missile joueur touche un alien
+    /// </summary>
     public class MissileJoueur : Missile
     {
         /// <summary>
@@ -28,6 +25,23 @@ namespace Model
                 this.MissileLancer = false;
             }
             if (MissileLancer) { this.MissileY -= 1; }
+        }
+        /// <summary>
+        /// Vérifie si un missile du joueur entre en collision avec un alien
+        /// </summary>
+        /// <param name="missile">Le missile du joueur à vérifier</param>
+        /// <param name="alien">L'alien avec lequel vérifier la collision</param>
+        /// <returns>True si une collision est détectée, sinon False</returns>
+        public static bool CollisionMissileJoueurDansAlien(MissileJoueur missile, Alien alien)
+        {
+            if (missile.MissileX >= alien.AlienX && missile.MissileX <= alien.AlienX + 7 && missile.MissileY >= alien.AlienY && missile.MissileY <= alien.AlienY + 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

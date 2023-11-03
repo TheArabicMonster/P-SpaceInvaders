@@ -179,7 +179,7 @@ do
                     foreach (Alien alien in ListeAlien)
                     {
                         //si le missile du joueur touche un alien -> entre dans la boucle
-                        if (MissileAlien.CollisionMissileJoueurDansAlien(missile, alien))
+                        if (MissileJoueur.CollisionMissileJoueurDansAlien(missile, alien))
                         {
                             //soustrais des HP de l'aliens égale au dégats du MissileJoueur
                             alien.AlienHP -= missile.MissileDMG;

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// la classe Alien contient les caractéristiques basique de l'alien, ainsi que ses méthode de déplacement
+    /// </summary>
     public class Alien
     {
         List<MissileAlien> MissileAlienChargement = new List<MissileAlien>();

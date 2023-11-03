@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// la classe MissileAlien contient les caractéristiques basique du missiles alien, ainsi que sa méthode de déplacement
+    /// </summary>
     public class MissileAlien : Missile
     {
         /// <summary>
@@ -33,23 +36,6 @@ namespace Model
             else if (this.MissileY < 39)
             {
                 this.MissileY += 1;
-            }
-        }
-        /// <summary>
-        /// Vérifie si un missile du joueur entre en collision avec un alien
-        /// </summary>
-        /// <param name="missile">Le missile du joueur à vérifier</param>
-        /// <param name="alien">L'alien avec lequel vérifier la collision</param>
-        /// <returns>True si une collision est détectée, sinon False</returns>
-        public static bool CollisionMissileJoueurDansAlien(MissileJoueur missile, Alien alien)
-        {
-            if (missile.MissileX >= alien.AlienX && missile.MissileX <= alien.AlienX + 7 && missile.MissileY >= alien.AlienY && missile.MissileY <= alien.AlienY + 2)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
             }
         }
     }
