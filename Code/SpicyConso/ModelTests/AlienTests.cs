@@ -14,7 +14,7 @@ namespace Model.Tests
             int HP = 20;
 
             // Act
-            Alien alien = new Alien(X, Y, HP);
+            Alien alien = new(X, Y, HP);
 
             // Assert
             Assert.AreEqual(X, alien.AlienX);
@@ -27,7 +27,7 @@ namespace Model.Tests
         public void DeplacementDroiteAlienTest()
         {
             // Arrange
-            Alien alien = new Alien(0, 0, 0);
+            Alien alien = new(0, 0, 0);
 
             // Act
             alien.DeplacementDroiteAlien();
@@ -37,12 +37,12 @@ namespace Model.Tests
         }
 
         [TestMethod()]
-        public void DeplacementDroiteAlienTest_AlienChangeDirection()
+        public void DeplacementDroiteAlienTestAlienChangeDirection()
         {
             // Arrange
             int largeurEcran = 150;
             int largeurAlien = 6;
-            Alien alien = new Alien(largeurEcran - largeurAlien - 2, 0, 0);
+            Alien alien = new(largeurEcran - largeurAlien - 2, 0, 0);
 
             // Act
             alien.DeplacementDroiteAlien();

@@ -13,7 +13,7 @@ namespace Model.Tests
             int Y = 5;
 
             // Act
-            Joueur joueur = new Joueur(X, Y);
+            Joueur joueur = new(X, Y);
 
             // Assert
             Assert.AreEqual(X, joueur.JoueurX);
@@ -26,7 +26,7 @@ namespace Model.Tests
         public void DeplacementJoueurDroiteTest()
         {
             // Arrange
-            Joueur joueur = new Joueur(0, 0);
+            Joueur joueur = new(0, 0);
 
             // Act
             joueur.DeplacementJoueurDroite();
@@ -36,11 +36,11 @@ namespace Model.Tests
         }
 
         [TestMethod()]
-        public void DeplacementJoueurDroiteTest_NeDépassePasLargeurEcran()
+        public void DeplacementJoueurDroiteTestNeDépassePasLargeurEcran()
         {
             // Arrange
             int largeurEcran = 150;
-            Joueur joueur = new Joueur(largeurEcran - 7, 0);
+            Joueur joueur = new(largeurEcran - 7, 0);
 
             // Act
             joueur.DeplacementJoueurDroite();
