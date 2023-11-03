@@ -1,0 +1,15 @@
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Release\net6.0\Display.deps.json
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Release\net6.0\Display.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Release\net6.0\Display.pdb
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Release\net6.0\Model.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\bin\Release\net6.0\Model.pdb
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.csproj.AssemblyReference.cache
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.AssemblyInfoInputs.cache
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.AssemblyInfo.cs
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.csproj.CoreCompileInputs.cache
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.csproj.CopyComplete
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\refint\Display.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\Display.pdb
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Display\obj\Release\net6.0\ref\Display.dll

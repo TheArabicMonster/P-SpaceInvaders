@@ -1,0 +1,15 @@
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Release\net6.0\Storage.deps.json
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Release\net6.0\Storage.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Release\net6.0\Storage.pdb
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Release\net6.0\Model.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\bin\Release\net6.0\Model.pdb
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.csproj.AssemblyReference.cache
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.AssemblyInfoInputs.cache
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.AssemblyInfo.cs
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.csproj.CoreCompileInputs.cache
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.csproj.CopyComplete
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\refint\Storage.dll
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\Storage.pdb
+C:\Users\matkhaiy\Documents\GitHub\P-SpaceInvaders\Code\SpicyConso\Storage\obj\Release\net6.0\ref\Storage.dll
