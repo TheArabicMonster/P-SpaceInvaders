@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fHSfiFaoyETDa4ojQEfQwjyi4brCuSeGigYJCoTB20GwVAU11sE3TaXwGeUpvtNvxs7dYlLstpJ1SoK7d4IKkg==",
+  "dgSpecHash": "poeluCQ32IAWWRp7BYr3+N3pdVyTAjuzg9LLIr4S1seurhrUYRGj0MPtpgJAUSNuaLQsW5M2ga3AteH66+mfDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
+  "projectFilePath": "C:\\Users\\chats\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\Display.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problème de lecture du fichier cache C:\\Users\\matkhaiy\\Documents\\GitHub\\P-SpaceInvaders\\Code\\SpicyConso\\Display\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
